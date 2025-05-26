@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eleve Order Form</title>
+</head>
+<body>
+  <h1>Place your order</h1>
+  <form action="https://formsubmit.co/info@eleveinc.co.za" method="POST">
+    <input type="hidden" name="_captcha" value="false" />
+    <input type="hidden" name="_next" value="https://www.eleveinc.co.za/thank-you" />
+
+    <label for="name">Your Name:</label><br />
+    <input type="text" id="name" name="name" required /><br /><br />
+
+    <label for="email">Email Address:</label><br />
+    <input type="email" id="email" name="email" required /><br /><br />
+
+    <label for="phone">Phone Number:</label><br />
+    <input type="tel" id="phone" name="phone" required /><br /><br />
+
+    <label for="size">Choose a size:</label><br />
+    <select id="size" name="size" required>
+      <option value="">Select size</option>
+      <option value="Small">Small</option>
+      <option value="Medium">Medium</option>
+      <option value="Large">Large</option>
+      <option value="X-Large">X-Large</option>
+    </select><br /><br />
+
+    <label for="color">Choose a color:</label><br />
+    <select id="color" name="color" required>
+      <option value="">Select color</option>
+      <option value="Black">Black</option>
+      <option value="White">White</option>
+    </select><br /><br />
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
